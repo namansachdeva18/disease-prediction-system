@@ -1,0 +1,60 @@
+{
+    "heart": {
+        "model_name": "Random Forest",
+        "n_features": 14,
+        "feature_names": [
+            "age",
+            "sex",
+            "cp",
+            "trestbps",
+            "chol",
+            "fbs",
+            "restecg",
+            "thalach",
+            "exang",
+            "oldpeak",
+            "slope",
+            "ca",
+            "thal",
+            "high_chol"
+        ],
+        "target_names": [
+            "No Disease",
+            "Has Disease"
+        ],
+        "metrics": {
+            "accuracy": 100.0,
+            "f1_score": 100.0,
+            "roc_auc": 100.0
+        }
+    },
+    "diabetes": {
+        "model_name": "XGBoost",
+        "n_features": 14,
+        "feature_names": [
+            "Pregnancies",
+            "Glucose",
+            "BloodPressure",
+            "SkinThickness",
+            "Insulin",
+            "BMI",
+            "DiabetesPedigreeFunction",
+            "Age",
+            "glucose_insulin_ratio",
+            "age_risk",
+            "preg_age_risk",
+            "bmi_category_Obese",
+            "bmi_category_Overweight",
+            "bmi_category_Underweight"
+        ],
+        "target_names": [
+            "Not Diabetic",
+            "Diabetic"
+        ],
+        "metrics": {
+            "accuracy": 88.31,
+            "f1_score": 83.33,
+            "roc_auc": 95.31
+        }
+    }
+}
