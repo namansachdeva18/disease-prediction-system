@@ -70,10 +70,10 @@ st.markdown("""
 # ── Load Models (cached so they load only once) ───────────────
 @st.cache_resource
 def load_models():
-    heart_model    = joblib.load('../models/heart_model.pkl')
-    diab_model     = joblib.load('../models/diabetes_model.pkl')
-    heart_scaler   = joblib.load('../models/heart_scaler.pkl')
-    diab_scaler    = joblib.load('../models/diabetes_scaler.pkl')
+    heart_model    = joblib.load('models/heart_model.pkl')
+    diab_model     = joblib.load('models/diabetes_model.pkl')
+    heart_scaler   = joblib.load('models/heart_scaler.pkl')
+    diab_scaler    = joblib.load('models/diabetes_scaler.pkl')
 
     with open('../models/heart_features.json') as f:
         heart_features = json.load(f)
