@@ -75,11 +75,11 @@ def load_models():
     heart_scaler   = joblib.load('models/heart_scaler.pkl')
     diab_scaler    = joblib.load('models/diabetes_scaler.pkl')
 
-    with open('../models/heart_features.json') as f:
+    with open('models/heart_features.json') as f:
         heart_features = json.load(f)
-    with open('../models/diabetes_features.json') as f:
+    with open('models/diabetes_features.json') as f:
         diab_features = json.load(f)
-    with open('../models/metadata.json') as f:
+    with open('models/metadata.json') as f:
         metadata = json.load(f)
 
     return (heart_model, diab_model,
